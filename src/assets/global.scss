@@ -1,0 +1,118 @@
+$black: #000000;
+$white: #ffffff;
+$dark: #060405;
+
+$accent: #85bef7;
+
+$light: #cfe1f7;
+$grey: #e7f2f5;
+$med-grey: #777777;
+$tr: all 0.3s ease-in-out;
+
+$font: "Roboto", sans-serif;
+
+$mobile: 767px;
+$tablet: 1023px;
+$header: 60px;
+$footer: 100px;
+
+$roboto: "Roboto", sans-serif;
+$mono: "DM Mono", monospace;
+
+@mixin wrapper() {
+	max-width: 1480px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: $roboto;
+}
+body {
+	margin: 0;
+	font-size: 16px;
+	line-height: 130%;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+p {
+	margin: 0;
+	font-family: $mono;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: darken($accent, 50%);
+}
+h1 {
+	color: $accent;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+	background-color: white;
+}
+
+button,
+.button {
+	padding: 10px 25px;
+	color: $white;
+	background-color: $accent;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+	transition: $tr;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		background-color: darken($accent, 10%);
+	}
+
+	&:active {
+		background-color: darken($accent, 20%);
+	}
+
+	&--pale {
+		color: $accent;
+		border: 2px solid $accent;
+		background-color: transparent;
+		&:hover {
+			background-color: darken($accent, 10%);
+			border-color: darken($accent, 10%);
+			color: $white;
+		}
+
+		&:active {
+			background-color: darken($accent, 20%);
+			border-color: darken($accent, 20%);
+		}
+	}
+}
