@@ -1,19 +1,19 @@
 <template>
-	<div>
+	<main>
 		<Hero />
 		<Skills />
 		<PetProjects />
 		<Sertificates />
 		<Tasks />
-	</div>
+	</main>
 </template>
 
 <script>
-import Hero from "@/components/Hero.vue";
-import Skills from "@/components/Skills.vue";
-import PetProjects from "@/components/PetProjects.vue";
-import Sertificates from "@/components/Sertificates.vue";
-import Tasks from "@/components/Tasks.vue";
+import Hero from "@/components/blocks/Hero.vue";
+import Skills from "@/components/blocks/Skills.vue";
+import PetProjects from "@/components/blocks/PetProjects.vue";
+import Sertificates from "@/components/blocks/Sertificates.vue";
+import Tasks from "@/components/blocks/Tasks.vue";
 
 export default {
 	name: "Home",

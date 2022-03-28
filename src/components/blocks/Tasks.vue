@@ -5,10 +5,13 @@
 
 			<ul class="list">
 				<li class="list__item" v-for="(task, key) in getTasks" :key="key">
-					<a class="list__link" :href="task.link" target="_blank">
-						<img :src="task.img" alt="" />
+					<img :src="task.img" :alt="task.title" />
+					<div class="list__info">
 						<p>{{ task.description }}</p>
-					</a>
+						<a class="list__link" :href="task.link" target="_blank"
+							>visit the website</a
+						>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -35,36 +38,8 @@ export default {
 .list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-}
-
-.list__link {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 100%;
-
-	& img {
-		object-fit: cover;
-		object-position: center;
-		height: 100%;
-	}
-
-	& p {
-		position: absolute;
-		opacity: 0;
-		left: 0;
-		bottom: 0;
-		padding: 20px;
-		width: 100%;
-		text-align: center;
-		color: $white;
-		transition: $tr;
-		background-color: rgba(9, 43, 93, 0.8);
-	}
-
-	&:hover p {
-		opacity: 1;
+	@media (max-width: $tablet) {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 </style>

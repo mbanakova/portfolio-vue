@@ -45,5 +45,20 @@ header {
 		width: 40px;
 		height: 40px;
 	}
+	@media (max-width: $tablet) {
+		gap: 30px;
+	}
+
+	@media (max-width: $mobile) {
+		gap: 10px;
+	}
+}
+
+.header__github {
+	border-radius: 50%;
+	&:hover {
+		background-color: rgba(133, 190, 247, 0.5);
+		color: $white;
+	}
 }
 </style>

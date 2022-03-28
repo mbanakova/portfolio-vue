@@ -5,9 +5,5 @@ import sertificates from './sertificates.js'
 import tasks from './tasks.js'
 
 export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
-  getters: {},
   modules: { skills, pets, sertificates, tasks }
 })

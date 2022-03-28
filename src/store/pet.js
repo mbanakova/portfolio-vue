@@ -37,7 +37,7 @@ export default {
         img: require('@/assets/pet6.png')
       },
       {
-        title: 'React ToDo',
+        title: 'react todo',
         link: 'https://mbanakova.github.io/ToDo/',
         img: require('@/assets/pet8.png')
       },

@@ -23,6 +23,20 @@ nav {
 	color: inherit;
 	padding: 5px 10px;
 	border: 2px solid $accent;
+	border-radius: 4px;
 	display: block;
+
+	&:hover {
+		background-color: rgba(133, 190, 247, 0.5);
+		color: $white;
+	}
+
+	@media (max-width: $mobile) {
+		&:first-child,
+		&:nth-child(3),
+		&:nth-child(4) {
+			display: none;
+		}
+	}
 }
 </style>

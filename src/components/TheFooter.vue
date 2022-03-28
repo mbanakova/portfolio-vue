@@ -50,6 +50,11 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 20px;
+
+	@media (max-width: $mobile) {
+		flex-direction: column;
+	}
 }
 .contacts {
 	display: flex;
@@ -62,13 +67,13 @@ footer {
 		display: block;
 		text-decoration: none;
 		color: inherit;
-		border-radius: 50%;
+		border-radius: 4px;
 		line-height: 16px;
 		transition: $tr;
 
 		&:hover {
-			color: $light;
-			border-color: $light;
+			background-color: rgba(133, 190, 247, 0.5);
+			color: $white;
 		}
 	}
 

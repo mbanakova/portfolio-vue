@@ -61,6 +61,18 @@ $wood: #a56c2a;
 	width: 330px;
 	position: relative;
 	right: 0;
+
+	@media (max-width: $tablet) {
+		position: absolute;
+		right: 100px;
+	}
+
+	@media (max-width: $mobile) {
+		width: 300px;
+		right: unset;
+		left: -50px;
+		position: relative;
+	}
 }
 
 .witch {
@@ -68,6 +80,10 @@ $wood: #a56c2a;
 	top: 120px;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@media (max-width: $mobile) {
+		top: 100px;
+	}
 }
 
 .hair {

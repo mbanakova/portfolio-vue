@@ -51,10 +51,23 @@ export default {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	@media (max-width: $mobile) {
+		gap: 15px;
+		align-items: flex-start;
+	}
 }
-
+.school__list {
+	@media (max-width: $mobile) {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
 .school__date {
-	color: $med-grey;
+	color: #a2a0a0;
+	@media (max-width: $mobile) {
+		text-align: left;
+	}
 }
 .school__link {
 	display: flex;
@@ -70,6 +83,12 @@ export default {
 
 	&:active {
 		color: $med-grey;
+	}
+
+	@media (max-width: $mobile) {
+		flex-direction: column-reverse;
+		gap: 0;
+		align-items: flex-start;
 	}
 }
 </style>

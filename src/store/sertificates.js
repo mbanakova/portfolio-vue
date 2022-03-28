@@ -19,7 +19,20 @@ export default {
           date: '22.01.2022'
         }]
       },
+
       {
+        school: 'ITGid',
+        courses: [{
+          title: 'React. Lite Level',
+          link: 'https://itgid.info/img/certificate/02_igr1195.png',
+          date: '06.03.2021'
+        },
+        {
+          title: 'JavaScript v.2.0',
+          link: 'https://itgid.info/img/certificate/01_319gmqehpv.png',
+          date: '06.03.2021'
+        }]
+      }, {
         school: 'HTML-academy',
         courses: [{
           title: 'Frontend developer',
@@ -40,19 +53,6 @@ export default {
           title: 'HTML &CSS. Professional Website Coding',
           link: 'https://assets.htmlacademy.ru/certificates/intensive/159/1351465.pdf?1616264907&_ga=2.178335652.1043580548.1648390978-1746616546.1589640756',
           date: '12.07.2020'
-        }]
-      },
-      {
-        school: 'ITGid',
-        courses: [{
-          title: 'React. Lite Level',
-          link: 'https://itgid.info/img/certificate/02_igr1195.png',
-          date: '06.03.2021'
-        },
-        {
-          title: 'JavaScript v.2.0',
-          link: 'https://itgid.info/img/certificate/01_319gmqehpv.png',
-          date: '06.03.2021'
         }]
       },
     ]

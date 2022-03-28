@@ -24,6 +24,10 @@ $mono: "DM Mono", monospace;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 40px;
+
+	@media (max-width: $mobile) {
+		padding: 0 20px;
+	}
 }
 
 *,
@@ -41,6 +45,10 @@ body {
 	line-height: 130%;
 	overflow-x: hidden;
 	min-width: 320px;
+
+	@media (max-width: $tablet) {
+		font-size: 15px;
+	}
 }
 p {
 	margin: 0;
@@ -74,6 +82,8 @@ a {
 	transition: $tr;
 	color: inherit;
 	text-decoration: none;
+	font-family: $mono;
+	font-size: inherit;
 }
 .card {
 	padding: 20px;
@@ -84,7 +94,7 @@ a {
 
 button,
 .button {
-	padding: 10px 25px;
+	padding: 10px 20px;
 	color: $white;
 	background-color: $accent;
 	border: none;
@@ -95,6 +105,7 @@ button,
 	transition: $tr;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	&:hover {
 		background-color: darken($accent, 10%);
@@ -118,5 +129,90 @@ button,
 			background-color: darken($accent, 20%);
 			border-color: darken($accent, 20%);
 		}
+	}
+}
+
+.list__item {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: $tr;
+	text-align: center;
+
+	& img {
+		object-fit: cover;
+		object-position: center;
+		height: 100%;
+	}
+
+	@media (max-width: $mobile) {
+		font-size: 14px;
+		min-height: 200px;
+	}
+}
+
+.list__info {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	transition: all 1s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	.list__item:hover & {
+		animation: shade 0.5s linear forwards;
+	}
+
+	@media (max-width: $mobile) {
+		gap: 10px;
+	}
+}
+
+.list__link {
+	color: $white;
+	padding: 5px 15px;
+	display: none;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 1px;
+		background-color: $accent;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: $tr;
+	}
+
+	&:hover::after {
+		width: 80%;
+	}
+
+	&:active::after {
+		background-color: darken($accent, 10%);
+	}
+
+	.list__item:hover & {
+		display: block;
+	}
+}
+
+@keyframes shade {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 100%;
 	}
 }

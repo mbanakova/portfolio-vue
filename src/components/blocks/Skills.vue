@@ -40,6 +40,11 @@ export default {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
+
+	@media (max-width: $mobile) {
+		gap: 20px;
+		grid-template-columns: 1fr;
+	}
 }
 
 .list__group {
