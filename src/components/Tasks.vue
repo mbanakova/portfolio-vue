@@ -1,13 +1,13 @@
 <template>
-	<section id="sec-3" class="pets">
-		<div class="pets__wrapper">
-			<h2>Pet projects</h2>
+	<section id="sec-5" class="tasks">
+		<div class="tasks__wrapper">
+			<h2>Test tasks & freelance:</h2>
 
 			<ul class="list">
-				<li class="list__group" v-for="(project, key) in getPets" :key="key">
-					<a class="list__link" :href="project.link" target="_blank">
-						<img :src="project.img" :alt="project.title" />
-						<p>{{ project.title }}</p>
+				<li class="list__item" v-for="(task, key) in getTasks" :key="key">
+					<a class="list__link" :href="task.link" target="_blank">
+						<img :src="task.img" alt="" />
+						<p>{{ task.description }}</p>
 					</a>
 				</li>
 			</ul>
@@ -18,34 +18,24 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-	computed: {
-		...mapGetters(["getPets"]),
-	},
+	computed: { ...mapGetters(["getTasks"]) },
 };
 </script>
 
 <style lang="scss" scoped>
-.pets__wrapper {
+.tasks__wrapper {
 	@include wrapper();
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 40px;
+	gap: 20px;
 }
 
 .list {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 10px;
-}
-
-.list__group {
-	display: flex;
-	flex-direction: column;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
-	border: 1px solid $accent;
-	background-color: $white;
 }
 
 .list__link {

@@ -9,22 +9,28 @@
 					possimus voluptatum magni porro iusto temporibus. Blanditiis.
 				</p>
 				<div class="hero__cta">
-					<a class="cta__link button">Download CV</a>
+					<a
+						class="cta__link button"
+						href="https://firebasestorage.googleapis.com/v0/b/portfolio-vue-01.appspot.com/o/banakova-maria-CV.pdf?alt=media&token=99e1d94f-4509-4ad5-94db-38fcdcd5f41e"
+						download="banakova-maria-CV.pdf"
+						target="_self"
+						>Download CV</a
+					>
 					<a class="cta__link button button--pale" href="#sec-3" v-smooth-scroll
 						>See my pet-projects</a
 					>
 				</div>
 			</div>
-			<Owl class="hero__img" />
+			<Witch class="hero__img" />
 		</div>
 	</section>
 </template>
 
 <script>
-import Owl from "@/components/Owl";
+import Witch from "@/components/Witch";
 export default {
 	components: {
-		Owl,
+		Witch,
 	},
 };
 </script>

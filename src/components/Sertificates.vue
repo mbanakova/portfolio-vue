@@ -62,8 +62,14 @@ export default {
 	align-items: center;
 	gap: 30px;
 	padding: 5px;
-	text-decoration: none;
-	color: inherit;
 	font-family: $mono;
+
+	&:hover {
+		color: $accent;
+	}
+
+	&:active {
+		color: $med-grey;
+	}
 }
 </style>

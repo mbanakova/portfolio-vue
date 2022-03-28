@@ -1,6 +1,12 @@
 <template>
 	<header>
 		<div class="header-wrapper">
+			<a
+				href="https://github.com/mbanakova"
+				class="header__github"
+				target="_blank"
+				><img src="@/assets/github.svg" alt="My github" title="My github"
+			/></a>
 			<TheNav />
 		</div>
 	</header>
@@ -25,13 +31,19 @@ header {
 	top: 0;
 	left: 0;
 	font-family: $mono;
-	z-index: 1;
+	z-index: 100;
 }
 
 .header-wrapper {
 	@include wrapper();
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
+	gap: 50px;
+
+	& img {
+		width: 40px;
+		height: 40px;
+	}
 }
 </style>

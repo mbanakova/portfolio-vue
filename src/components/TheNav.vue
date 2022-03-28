@@ -4,7 +4,7 @@
 		<a class="nav-link" href="#sec-2" v-smooth-scroll>Skills</a>
 		<a class="nav-link" href="#sec-3" v-smooth-scroll>Projects</a>
 		<a class="nav-link" href="#sec-4" v-smooth-scroll>Sertificates</a>
-		<a class="nav-link" href="#sec-5" v-smooth-scroll>Section 5</a>
+		<a class="nav-link" href="#sec-5" v-smooth-scroll>Test tasks</a>
 	</nav>
 </template>
 

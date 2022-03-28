@@ -4,7 +4,7 @@
 		<Skills />
 		<PetProjects />
 		<Sertificates />
-		<Landings />
+		<Tasks />
 	</div>
 </template>
 
@@ -13,7 +13,7 @@ import Hero from "@/components/Hero.vue";
 import Skills from "@/components/Skills.vue";
 import PetProjects from "@/components/PetProjects.vue";
 import Sertificates from "@/components/Sertificates.vue";
-import Landings from "@/components/Landings.vue";
+import Tasks from "@/components/Tasks.vue";
 
 export default {
 	name: "Home",
@@ -22,7 +22,7 @@ export default {
 		Skills,
 		PetProjects,
 		Sertificates,
-		Landings,
+		Tasks,
 	},
 };
 </script>
