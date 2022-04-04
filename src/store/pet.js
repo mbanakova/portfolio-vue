@@ -2,6 +2,11 @@ export default {
   state: {
     pets: [
       {
+        title: 'pixelgram',
+        link: 'https://pixelgram01.web.app/',
+        img: require('@/assets/pet9.png')
+      },
+      {
         title: 'quiz',
         link: 'https://quiz0101.web.app/',
         img: require('@/assets/pet1.png')
@@ -11,11 +16,11 @@ export default {
         link: 'https://barahlito-new.web.app/',
         img: require('@/assets/pet2.png')
       },
-      {
-        title: 'furniture tooltips',
-        link: 'https://mbanakova.github.io/tooltips/build/',
-        img: require('@/assets/pet7.png')
-      },
+      // {
+      //   title: 'furniture tooltips',
+      //   link: 'https://mbanakova.github.io/tooltips/build/',
+      //   img: require('@/assets/pet7.png')
+      // },
       {
         title: 'quotes',
         link: 'https://vue-quotes-52acd.web.app/',
