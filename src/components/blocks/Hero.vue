@@ -3,23 +3,10 @@
 		<div class="hero__wrapper">
 			<div class="hero__content">
 				<h1>Hello!</h1>
-				<p>
-					My name is <span class="dev">Maria Banakova</span>, I'm a&nbsp;junior
-					web-developer.<br />Currently working for a&nbsp;men's fashion
-					brand.<br />Aim to&nbsp;build modern reactive, highly perfomant
-					interfaces and level up&nbsp;my&nbsp;coding skill 🤗
-				</p>
+				<p>My name is <span class="dev">Maria Banakova</span>, I'm a web-developer. Currently working for a&nbsp;men's fashion brand.<br />Aim to&nbsp;build modern reactive, highly perfomant interfaces and level up&nbsp;my&nbsp;coding skill 🤗</p>
 				<div class="hero__cta">
-					<a
-						class="cta__link button"
-						href="https://firebasestorage.googleapis.com/v0/b/portfolio-vue-01.appspot.com/o/banakova-maria-CV.pdf?alt=media&token=99e1d94f-4509-4ad5-94db-38fcdcd5f41e"
-						download="banakova-maria-CV.pdf"
-						target="_self"
-						>Download CV</a
-					>
-					<a class="cta__link button button--pale" href="#sec-3" v-smooth-scroll
-						>See my pet-projects</a
-					>
+					<a class="cta__link button" href="https://firebasestorage.googleapis.com/v0/b/portfolio-vue-01.appspot.com/o/mbanakova-js.pdf?alt=media&token=8fea9ba4-fbaa-4bdc-929e-1dd68c1722ca" download="mbanakova-js.pdf" target="_self">Download CV</a>
+					<a class="cta__link button button--pale" href="#sec-3" v-smooth-scroll>See my pet-projects</a>
 				</div>
 			</div>
 			<Witch class="hero__img" />

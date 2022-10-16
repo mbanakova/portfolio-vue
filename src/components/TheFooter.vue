@@ -4,17 +4,13 @@
 			<div class="copyright">© mbanakova, {{ getYear }}</div>
 			<ul class="contacts">
 				<li>
-					<a href="https://t.me/mbanakova"
-						><font-awesome icon="paper-plane"
-					/></a>
+					<a href="https://t.me/mbanakova"><font-awesome icon="paper-plane" /></a>
 				</li>
 				<li>
 					<a href="tel:+79268757522"><font-awesome icon="phone" /></a>
 				</li>
 				<li>
-					<a href="mailto:mbanakova@yandex.ru"
-						><font-awesome icon="envelope"
-					/></a>
+					<a href="mailto:mbanakova@yandex.ru"><font-awesome icon="envelope" /></a>
 				</li>
 			</ul>
 			<div class="framework">build on Vue.js</div>

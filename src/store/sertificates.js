@@ -3,23 +3,33 @@ export default {
     sertificates: [
       {
         school: 'udemy',
-        courses: [{
-          title: 'Vue - The Complete Guide (incl. Router & Composition API)',
-          link: 'https://www.udemy.com/certificate/UC-8beb3e2c-ae6c-47c5-b486-ee614c357da6/',
-          date: '19.03.2022'
-        },
-        {
-          title: 'Nuxt.js - Vue.js on Steroids',
-          link: 'https://www.udemy.com/certificate/UC-d8c304a6-f0f8-4aee-a027-bc7e26d1f40b/',
-          date: '06.02.2022'
-        },
-        {
-          title: 'Clean Code',
-          link: 'https://www.udemy.com/certificate/UC-11a1bec9-0768-4b34-85c8-6820a57abc20/',
-          date: '22.01.2022'
-        }]
+        courses: [
+          {
+            title: 'Vue JS и Vuex',
+            link: 'https://www.udemy.com/certificate/UC-581a59a0-474a-492f-a6d2-0de339d9e282/',
+            date: '15.10.2022'
+          },
+          {
+            title: 'The Complete SQL Bootcamp 2022',
+            link: 'https://www.udemy.com/certificate/UC-1b6def8f-1b28-42ee-9292-6367ea494709/',
+            date: '08.09.2022'
+          },
+          {
+            title: 'Vue - The Complete Guide (incl. Router & Composition API)',
+            link: 'https://www.udemy.com/certificate/UC-8beb3e2c-ae6c-47c5-b486-ee614c357da6/',
+            date: '19.03.2022'
+          },
+          {
+            title: 'Nuxt.js - Vue.js on Steroids',
+            link: 'https://www.udemy.com/certificate/UC-d8c304a6-f0f8-4aee-a027-bc7e26d1f40b/',
+            date: '06.02.2022'
+          },
+          {
+            title: 'Clean Code',
+            link: 'https://www.udemy.com/certificate/UC-11a1bec9-0768-4b34-85c8-6820a57abc20/',
+            date: '22.01.2022'
+          }]
       },
-
       {
         school: 'ITGid',
         courses: [{
@@ -32,7 +42,8 @@ export default {
           link: 'https://itgid.info/img/certificate/01_319gmqehpv.png',
           date: '06.03.2021'
         }]
-      }, {
+      },
+      {
         school: 'HTML-academy',
         courses: [{
           title: 'Frontend developer',

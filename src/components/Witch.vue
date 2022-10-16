@@ -12,7 +12,7 @@
 				<div class="left-hand">
 					<div class="stick">
 						<div class="info">
-							<div class="error">Hire me!</div>
+							<div class="error">Send offers!</div>
 						</div>
 					</div>
 				</div>

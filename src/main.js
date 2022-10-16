@@ -14,3 +14,4 @@ app.use(VueSmoothScroll, {
 })
 app.component('font-awesome', FontAwesome)
 app.mount('#app')
+
