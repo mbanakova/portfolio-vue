@@ -1,12 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router.js'
-import store from './store'
+import { createPinia } from 'pinia'
 import FontAwesome from "./assets/fontawesome";
 import VueSmoothScroll from 'vue3-smooth-scroll'
 
 const app = createApp(App)
-app.use(store)
+const pinia = createPinia()
+app.use(pinia)
 app.use(router)
 app.use(VueSmoothScroll, {
   duration: 1000,

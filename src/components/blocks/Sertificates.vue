@@ -5,7 +5,7 @@
 			<ul class="list">
 				<li
 					class="list__group school card"
-					v-for="(item, key) in getSertificates"
+					v-for="(item, key) in sertificates"
 					:key="key"
 				>
 					<h3 class="school__title">{{ item.school }}</h3>
@@ -23,13 +23,10 @@
 	</section>
 </template>
 
-<script>
-import { mapGetters } from "vuex";
-export default {
-	computed: {
-		...mapGetters(["getSertificates"]),
-	},
-};
+<script setup>
+import {useSertificatesStore} from './../../pinia/sertificatesStore'
+const store = useSertificatesStore()
+const sertificates = store.sertificates
 </script>
 
 <style lang="scss" scoped>

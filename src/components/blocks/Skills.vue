@@ -3,11 +3,7 @@
 		<div class="skills__wrapper">
 			<h2>I use:</h2>
 			<ul class="list">
-				<li
-					class="list__group card"
-					v-for="(group, key) in getSkills"
-					:key="key"
-				>
+				<li class="list__group card" v-for="(group, key) in skills" :key="key">
 					<h3>{{ group.title }}:</h3>
 					<ul class="list__skills">
 						<li v-for="(item, key) in group.list" :key="key">{{ item }}</li>
@@ -18,13 +14,10 @@
 	</section>
 </template>
 
-<script>
-import { mapGetters } from "vuex";
-export default {
-	computed: {
-		...mapGetters(["getSkills"]),
-	},
-};
+<script setup>
+import {useSkillsStore} from './../../pinia/skillsStore'
+const store = useSkillsStore()
+const skills = store.skills
 </script>
 
 <style lang="scss" scoped>
@@ -65,7 +58,7 @@ export default {
 
 		&::before {
 			position: absolute;
-			content: "";
+			content: '';
 			left: 0;
 			top: 7px;
 			width: 5px;

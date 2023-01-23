@@ -1,5 +1,8 @@
-export default {
-  state: {
+import { defineStore } from 'pinia'
+
+export const useSertificatesStore = defineStore('sertificatesStore', {
+
+  state: () => ({
     sertificates: [
       {
         school: 'udemy',
@@ -67,12 +70,5 @@ export default {
         }]
       },
     ]
-  },
-  mutations: {},
-  actions: {},
-  getters: {
-    getSertificates(state) {
-      return state.sertificates
-    }
-  }
-}
+  })
+})

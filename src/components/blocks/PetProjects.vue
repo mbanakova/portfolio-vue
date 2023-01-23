@@ -4,7 +4,7 @@
 			<h2>Pet projects</h2>
 
 			<ul class="list">
-				<li class="list__item" v-for="(project, key) in getPets" :key="key">
+				<li class="list__item" v-for="(project, key) in petProjects" :key="key">
 					<img :src="project.img" :alt="project.title" />
 					<div class="list__info">
 						<p>{{ project.title }}</p>
@@ -18,13 +18,10 @@
 	</section>
 </template>
 
-<script>
-import { mapGetters } from "vuex";
-export default {
-	computed: {
-		...mapGetters(["getPets"]),
-	},
-};
+<script setup>
+import {usePetsStore} from './../../pinia/petsStore'
+const store = usePetsStore()
+const petProjects = store.pets
 </script>
 
 <style lang="scss" scoped>

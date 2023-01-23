@@ -1,5 +1,8 @@
-export default {
-  state: {
+import { defineStore } from 'pinia'
+
+export const useTasksStore = defineStore('tasksStore', {
+
+  state: () => ({
     tasks: [
       {
         description: 'temperature data, kinda todo',
@@ -32,12 +35,5 @@ export default {
         img: require('@/assets/task6.png')
       }
     ]
-  },
-  mutations: {},
-  actions: {},
-  getters: {
-    getTasks(state) {
-      return state.tasks
-    }
-  },
-} 
+  })
+})

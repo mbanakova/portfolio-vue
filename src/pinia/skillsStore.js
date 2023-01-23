@@ -1,9 +1,12 @@
-export default {
-  state: {
+import { defineStore } from 'pinia'
+
+export const useSkillsStore = defineStore('skillsStore', {
+
+  state: () => ({
     skills: [
       {
         title: 'Vue.js',
-        list: ['Router', 'Vuex', 'Firebase', 'Nuxt',]
+        list: ['Router', 'Pinia', 'Vuex', 'Composition API', 'Firebase', 'Nuxt',]
       },
       {
         title: 'JavaScript',
@@ -18,12 +21,5 @@ export default {
         list: ['Git & Github', 'SQL', 'MJML', 'Nunjucks', 'SCSS', 'Gulp']
       },
     ]
-  },
-  mutations: {},
-  actions: {},
-  getters: {
-    getSkills(state) {
-      return state.skills
-    }
-  },
-} 
+  })
+})

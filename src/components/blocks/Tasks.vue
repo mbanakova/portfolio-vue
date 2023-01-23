@@ -4,7 +4,7 @@
 			<h2>Test tasks & freelance:</h2>
 
 			<ul class="list">
-				<li class="list__item" v-for="(task, key) in getTasks" :key="key">
+				<li class="list__item" v-for="(task, key) in tasks" :key="key">
 					<img :src="task.img" :alt="task.title" />
 					<div class="list__info">
 						<p>{{ task.description }}</p>
@@ -18,11 +18,10 @@
 	</section>
 </template>
 
-<script>
-import { mapGetters } from "vuex";
-export default {
-	computed: { ...mapGetters(["getTasks"]) },
-};
+<script setup>
+import {useTasksStore} from './../../pinia/tasksStore'
+const store = useTasksStore()
+const tasks = store.tasks
 </script>
 
 <style lang="scss" scoped>

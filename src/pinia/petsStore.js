@@ -1,5 +1,8 @@
-export default {
-  state: {
+import { defineStore } from 'pinia'
+
+export const usePetsStore = defineStore('petsStore', {
+
+  state: () => ({
     pets: [
       {
         title: 'pixelgram',
@@ -47,12 +50,5 @@ export default {
         img: require('@/assets/pet8.png')
       },
     ]
-  },
-  mutations: {},
-  actions: {},
-  getters: {
-    getPets(state) {
-      return state.pets
-    }
-  },
-} 
+  })
+})
